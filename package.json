@@ -33,6 +33,8 @@
   "author": "Ali-romero",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "remodal": "^1.1.1",
+    "slick-carousel": "^1.8.1"
   }
 }

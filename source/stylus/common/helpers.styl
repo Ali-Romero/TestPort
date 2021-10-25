@@ -1,2 +1,68 @@
-.helpers
-  color: red
+.wrapper
+  max-width: 980px
+  margin: 0 auto
+  padding-left: 20px
+  padding-right: 20px
+  width: 100%
+
+.d-none
+  display: none
+
+.d-block
+  display: block
+.layout
+  padding-top: 42px
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+.content-title
+  font-size: 36px
+  font-weight: bold
+  text-transform: uppercase
+  line-height: 1
+.line
+  width: 90px
+  height: 3px
+  background-color: $color-black
+  margin-bottom: 50px
+
+.btn
+  padding: 10px 10px
+  border: 2px solid $color-white
+  color: $color-white
+  font-size: 8px
+  text-transform: uppercase
+  width: 100%
+  +above($breakpoints.s)
+    padding: 15px 15px
+    font-size: 12px
+  +above($breakpoints.xs)
+    padding: 25px 50px
+    font-size: 16px
+  +above($breakpoints.sm)
+    padding: 25px 20px
+
+.btn-order
+  border-radius: 4px
+  background-image: -moz-linear-gradient( 90deg, rgb(71,118,230) 0%, rgb(142,84,233) 100%)
+  background-image: -webkit-linear-gradient( 90deg, rgb(71,118,230) 0%, rgb(142,84,233) 100%)
+  background-image: -ms-linear-gradient( 90deg, rgb(71,118,230) 0%, rgb(142,84,233) 100%)
+  box-shadow: 0px 4px 0px 0px rgb( 55, 92, 179 )
+  font-size: 18px
+  text-transform: uppercase
+  color: $color-white
+  padding: 22px 84px
+  margin-bottom: 20px
+  position: relative
+  transition: 0.3s
+  &:active
+    top: 2px
+    box-shadow: 0px 4px 0px 0px rgb(71,118,230)
+  &--modal
+    padding: 15px 56px
+    +above($breakpoints.xs)
+      padding: 18px 56px
+
+.ineffective-size
+  color: $color-grey

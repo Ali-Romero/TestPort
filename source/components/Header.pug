@@ -1,6 +1,17 @@
 header.header
-  .header__logo
-    | Me
-    span.text-primary cc
-    |ano
-  .header__slogan Frontend builder
+  .header__inner
+    .wrapper
+      .header__layout
+        .header__logo
+          +icon(name="logo").svg-logo
+        .header__menu
+          nav.menu
+            ul.menu__list
+              li.menu__item
+                a(href="#" aria-label="menu-link").menu__link Каталог
+              li.menu__item
+                a(href="#" aria-label="menu-link").menu__link Преимущества
+              li.menu__item
+                a(href="#" aria-label="menu-link").menu__link Отзывы
+              li.menu__item
+                a(href="#" aria-label="menu-link").menu__link Как заказать

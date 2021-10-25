@@ -1,0 +1,53 @@
+.info
+  &__inner
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding-top: 50px
+  &__title
+    font-size: 20px
+    font-weight: bold
+    line-height: 1
+    text-transform: uppercase
+    margin-bottom: 15px
+    text-align: center
+    
+    +above($breakpoints.xs)
+      margin-bottom: 20px
+      font-size: 26px
+    +above($breakpoints.sm)
+      margin-bottom: 24px
+      font-size: 36px
+  &__line
+    width: 90px
+    height: 3px
+    background-color: $color-black
+    margin-bottom: 15px
+    +above($breakpoints.xs)
+      margin-bottom: 26px
+  &__description
+    max-width: 888px
+    text-align: center
+    font-size: 14px
+    line-height: 1.875
+    margin-bottom: 15px
+    +above($breakpoints.sm)
+      margin-bottom: 26px
+      font-size: 16px
+  &__description-tagline
+    margin-top: 10px
+    +above($breakpoints.xs)
+      margin-top: 15px
+    +above($breakpoints.sm)
+      margin-top: 20px
+  &__slider
+    max-width: 100%
+.slider
+  &__list
+    display: flex
+  &__item
+    display: block !important
+  &__img
+    display: inline-block
+

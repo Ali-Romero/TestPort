@@ -1,0 +1,113 @@
+.footer
+  &__inner
+    background-color: $color-white-light
+  &__layout
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding: 40px 0px 80px 0px
+    +above($breakpoints.xs)
+      padding: 80px 0px 120px 0px
+  &__title
+    font-size: 30px
+    font-weight: bold
+    text-transform: uppercase
+    margin-bottom: 30px
+    +above($breakpoints.xxs)
+      font-size: 35px
+    +above($breakpoints.xs)
+      font-size: 45px
+    +above($breakpoints.sm)
+      font-size: 60px
+
+.operation
+  &__list
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+    +above($breakpoints.xs)
+      justify-content: space-between
+      flex-wrap: nowrap
+  &__item
+    display: flex
+    align-items: center
+    flex-direction: column
+    margin-bottom: 20px
+
+    &:last-child
+      margin-bottom: 0px
+    +above($breakpoints.xs)
+      margin-bottom: 0px
+
+  &__icon
+    width: 124px
+    height: 124px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 100%
+    background-color: $color-purple
+    box-shadow: 0px 0px 0px 6px rgba(213, 121, 161, 1)
+    margin-bottom: 30px
+  &__circle
+    width: 10px
+    height: 10px
+    border-radius: 100%
+    background-color: $color-grey
+    box-shadow: 0px 0px 0px 3px rgba(235, 231, 234, 1)
+    margin-bottom: 20px
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      bottom: 0
+      top: 0
+      margin: auto 0
+      left: 5px
+      width: 112px
+      height: 1px
+      border-top: 2px dotted $color-grey
+
+
+    &::before
+      content: ""
+      position: absolute
+      bottom: 0
+      top: 0
+      margin: auto 0
+      right: 2px
+      width: 112px
+      height: 1px
+      border-top: 2px dotted $color-grey
+
+  &__description
+    max-width: 220px
+    text-align: center
+    font-size: 16px
+
+.operation__item:first-child .operation__circle::before
+  display: block
+  +above($breakpoints.xxs)
+    display: none
+
+.operation__item:nth-child(3) .operation__circle::before
+  display: block
+  +above($breakpoints.xxs)
+    display: none
+  +above($breakpoints.xs)
+    display: block
+.operation__item:nth-child(2) .operation__circle::after
+  display: block
+  +above($breakpoints.xxs)
+    display: none
+  +above($breakpoints.xs)
+    display: block
+.operation__item:last-child .operation__circle::after
+  display: block
+  +above($breakpoints.xxs)
+    display: none
+
+.svg-operation
+  fill: $color-white
